@@ -1,15 +1,52 @@
+/* Font moderna */
 body {
-  background: #f2f2f2;
-  font-family: Arial, sans-serif;
-  padding: 40px;
-  max-width: 900px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/* Sezioni larghe e minimal */
+.section {
+  padding: 120px 20px;
+  max-width: 800px;
   margin: auto;
+  text-align: center;
 }
 
-h1 {
-  font-size: 32px;
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-a {
-  color: blue;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Hero iniziale */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Immagini larghe tipo Soul Net */
+.full-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/* Footer minimal */
+footer {
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
 }
