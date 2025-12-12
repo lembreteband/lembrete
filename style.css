@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Lexend, Lexend, Lexend;
+  font-family: American Typewriter, Helvetica, sans-serif;
   color: #111;
   background: #fff;
   line-height: 1.5;
@@ -11,7 +11,7 @@ body {
 /* Sezioni larghe e minimal */
 .section {
   padding: 60px 20px;
-  max-width: 800px;
+  max-width: 80px;
   margin: auto;
   text-align: center;
 }
@@ -37,7 +37,7 @@ ul {
 
 /* Immagini larghe tipo Soul Net */
 .full-image img {
-  width: 50%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0;
@@ -49,4 +49,40 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #666;
+}
+}
+/* Stili per la galleria di 3 immagini affiancate */
+.gallery {
+    display: flex; /* Attiva Flexbox */
+    justify-content: space-between; /* Distribuisce lo spazio tra le immagini */
+    align-items: flex-start; /* Allinea gli elementi in alto */
+    padding: 20px; /* Aggiunge un po' di spazio intorno */
+    gap: 15px; /* Spazio tra gli elementi della galleria */
+}
+
+/* Stili per ogni contenitore di immagine nella galleria */
+.gallery-item {
+    flex: 1; /* Permette a tutti e tre gli elementi di occupare uno spazio uguale */
+    min-width: 30%; /* Assicura che ci sia uno spazio minimo */
+}
+
+/* Stili per le immagini stesse all'interno della galleria */
+.gallery-item img {
+    width: 100%; /* L'immagine occupa il 100% del suo contenitore (.gallery-item) */
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Rendi gli angoli leggermente arrotondati (opzionale) */
+    object-fit: cover;
+}
+/* Stili per l'immagine a tutta larghezza */
+.full-width-image {
+    width: 100%; /* Assicura che il contenitore occupi tutta la larghezza */
+    overflow: hidden; /* Nasconde eventuali margini o overflow */
+    margin-top: 30px; /* Spazio sopra la sezione */
+}
+
+.full-width-image img {
+    width: 100%; /* L'immagine occupa il 100% della larghezza del suo contenitore */
+    height: auto; /* Mantieni le proporzioni */
+    display: block;
 }
