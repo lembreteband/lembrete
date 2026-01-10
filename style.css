@@ -195,6 +195,9 @@ footer {
     text-decoration: none;
     overflow: hidden;
     transition: none; /* Resetta le transizioni globali dei link */
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 4 / 3; /* Mantiene un rapporto d'aspetto per l'altezza */
 }
 
 /* Disabilita gli effetti globali dei link sulla gallery */
@@ -210,14 +213,16 @@ footer {
 /* Stili per le immagini stesse all'interno della galleria */
 .gallery-item img {
     width: 100%; /* L'immagine occupa il 100% del suo contenitore (.gallery-item) */
-    height: auto;
+    height: 100%;
     display: block;
     border-radius: 8px; /* Rendi gli angoli leggermente arrotondati (opzionale) */
     object-fit: cover;
     transition: opacity 0.4s ease;
+    margin: 0;
+    padding: 0;
 }
 
-/* Overlay con testo centrato */
+/* Overlay con testo centrato perfettamente al centro dell'immagine */
 .gallery-item .label-overlay {
     position: absolute;
     top: 50%;
@@ -232,6 +237,11 @@ footer {
     opacity: 1;
     pointer-events: none;
     letter-spacing: 0.02em;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
 }
 
 /* Effetto hover fluido */
